@@ -6,7 +6,7 @@ function Search (props){
     const {setTvShowSearch} = props
     return (
         <>
-        <form onSubmit = {GetTvShows}>
+        <form  >
             <label htmlFor="tvShow">
                 Search for your tv show:   
             </label>
@@ -14,7 +14,7 @@ function Search (props){
 
                 setTvShowSearch(event.target.value)
             }}/>
-            <button id="submitSearch" >Search</button>
+           
         </form>
         </>
         
