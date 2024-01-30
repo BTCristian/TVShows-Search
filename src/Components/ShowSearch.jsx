@@ -5,9 +5,9 @@ function Search(props) {
   const { setTvShowSearch } = props;
   return (
     <>
-      <form>
-        <label htmlFor="tvShow">Search for your tv show:</label>
+      <form alert="type in your TV Show" className="searchForm">
         <input
+          placeholder="Search for your tv show"
           type="text"
           id="tvShow"
           onChange={(event) => {

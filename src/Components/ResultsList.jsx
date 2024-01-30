@@ -35,7 +35,7 @@ export default function FetchResults(props) {
         <a href={showUrl}>
           <h2>{showName}</h2>
         </a>
-        <p>{showRating.average} &#11088;</p>
+        <p className="rating">{showRating.average} &#11088;</p>
       </div>
 
       <div className="imgContainer">
@@ -48,7 +48,7 @@ export default function FetchResults(props) {
       </div>
 
       <div className="general-information">
-        <p className="genres">{genres}</p>
+        <h3 className="genres">{genres}</h3>
         <p>{handleSummary}</p>
       </div>
     </>

@@ -25,7 +25,6 @@ function App() {
 
       <ul>
         {shows.map(({ show }) => {
-          console.log(show);
           return (
             <div className="Results">
               <FetchResults

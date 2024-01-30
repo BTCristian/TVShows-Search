@@ -5,12 +5,15 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #079ab4;
+  background-image: url(/sky.jpg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+* {
+  margin: 0;
 }
 
 body {
@@ -21,28 +24,12 @@ body {
   min-height: 100vh;
 }
 
+.searchForm {
+  margin: 1em;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #d4e0df;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 .Results {
@@ -53,20 +40,29 @@ button:focus-visible {
     "title title"
     "img general-information"
     "img general-information";
-  border: solid 0.1em black;
+  border: groove 0.5em rgb(167, 159, 159);
+  border-radius: 8em;
   margin-bottom: 1em;
 }
-
+a {
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: none;
+}
 .title {
   grid-area: title;
 }
-
+.title h2 {
+  padding: 0 1em 0 1em;
+}
 .imgContainer {
   grid-area: img;
   margin-bottom: 2em;
 }
 .imgContainer img {
   max-width: 70%;
+  border-radius: 1em;
 }
 
 .general-information {
@@ -74,8 +70,19 @@ button:focus-visible {
   margin-top: 3%;
   margin-right: 10%;
 }
+.general-information p {
+  font-weight: bold;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.87);
+}
 
 .genres {
-  color: orange;
+  color: rgb(255, 196, 0);
   font-size: 1.5em;
+}
+
+.rating {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: rgb(0, 255, 0);
 }
