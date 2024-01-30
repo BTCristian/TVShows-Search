@@ -13,9 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-
 body {
   margin: 0;
   display: flex;
@@ -48,4 +45,37 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.Results {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title title"
+    "img general-information"
+    "img general-information";
+  border: solid 0.1em black;
+  margin-bottom: 1em;
+}
 
+.title {
+  grid-area: title;
+}
+
+.imgContainer {
+  grid-area: img;
+  margin-bottom: 2em;
+}
+.imgContainer img {
+  max-width: 70%;
+}
+
+.general-information {
+  grid-area: general-information;
+  margin-top: 3%;
+  margin-right: 10%;
+}
+
+.genres {
+  color: orange;
+  font-size: 1.5em;
+}

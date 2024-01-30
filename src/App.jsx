@@ -21,26 +21,24 @@ function App() {
   return (
     <>
       <h1>TV Shows</h1>
-      <Search  setTvShowSearch={setTvShowSearch} />
-      
-      <ul >
-        {shows.map(({show}) => {
-          console.log(show)
+      <Search setTvShowSearch={setTvShowSearch} />
+
+      <ul>
+        {shows.map(({ show }) => {
+          console.log(show);
           return (
-            
-          <>
-            <FetchResults 
-            showName={show.name} 
-            showGenres={show.genre} 
-            showSummary = {show.summary}
-            showImage = {show.image}
-            showRating = {show.rating}
-            showUrl = {show.url}
-           />
-          </>
-          )
+            <div className="Results">
+              <FetchResults
+                showName={show.name}
+                showGenre={show.genres}
+                showSummary={show.summary}
+                showImage={show.image}
+                showRating={show.rating}
+                showUrl={show.url}
+              />
+            </div>
+          );
         })}
-        
       </ul>
     </>
   );
