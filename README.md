@@ -46,6 +46,6 @@ To run this project locally, follow these steps:
 
 ## Author
 
-Gild Ogbeide & Christian Badea
+Gild Ogbeide & Cristian Badea
 
 Feel free to contribute to this project by submitting pull requests or reporting issues. Thank you for using our TV Shows Search Application! 📺🔍
